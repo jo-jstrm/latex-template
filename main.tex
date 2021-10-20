@@ -1,0 +1,55 @@
+%--------------------
+% Packages
+% -------------------
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[pdftex]{graphicx} % Required for including pictures
+\usepackage[pdftex,linkcolor=black,pdfborder={0 0 0}]{hyperref} % Format links for pdf
+
+\frenchspacing % No double spacing between sentences
+\linespread{1.2} % Set linespace
+\usepackage[a4paper, lmargin=2.5cm, rmargin=2.5cm, tmargin=0.1111\paperheight, bmargin=0.1111\paperheight]{geometry} %margins
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{enumitem}
+
+
+
+%-----------------------
+% Set pdf information and add title, fill in the fields
+%-----------------------
+\hypersetup{ 	
+pdfsubject = {},
+pdftitle = {},
+pdfauthor = {}
+}
+
+%-----------------------
+% Begin document
+%-----------------------
+\begin{document}
+
+\input{titlepage}
+
+\input{chapters/abstract}
+\input{chapters/introduction}
+\input{chapters/conclusion}
+\pagebreak
+
+%-----------------------
+% Biblopgraphy
+%-----------------------
+\bibliographystyle{ieeetr}
+\bibliography{references/references}
+\pagebreak
+
+%-----------------------
+% Appendix
+%-----------------------
+
+\appendix
+\input{appendix/appendix}
+
+\end{document}
